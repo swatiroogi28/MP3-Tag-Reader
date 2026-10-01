@@ -4,7 +4,7 @@
 #include "view.h"
 #include "types.h"
 
-Status validate_input(int argc,char *argv[],ViewInfo *viewInfo)
+Status validate_input_view(int argc,char *argv[],ViewInfo *viewInfo)
 {
     //check if the input is .mp3 file 
     //check signature is ID3 or not
