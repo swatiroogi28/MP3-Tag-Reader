@@ -144,6 +144,11 @@ Status do_edit(ViewInfo *viewInfo)
             fwrite(buffer,1,bytes,fptr_temp);
     }
     fclose(fptr_temp);
+
+    remove(viewInfo->src_mp3_fname);
+
+    rename("temp.mp3",viewInfo->src_mp3_fname);
+    
     return e_success;
 
 }
